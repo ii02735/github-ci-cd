@@ -4,4 +4,6 @@ jobs:
   test-job:
     runs-on: ubuntu-18.04
     steps:
+      - run: pwd
+      - run: ls
       - run: cat file.txt

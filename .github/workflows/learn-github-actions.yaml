@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - run: pwd
-      - run: cd .. && cat file.txt
+      - run: cat ../file.txt

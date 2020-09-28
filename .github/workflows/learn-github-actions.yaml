@@ -2,6 +2,6 @@ name: learn-github-actions
 on: [push]
 jobs:
   test-job:
-    runs-on: busybox-latest
+    runs-on: ubuntu-18.04
     steps:
       - run: cat file.txt

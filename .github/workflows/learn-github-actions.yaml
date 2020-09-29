@@ -4,5 +4,10 @@ jobs:
   test-job:
     runs-on: ubuntu-18.04
     steps:
-      - working-directory: .
-        run: pwd
+    - name: Connect to SSH
+      uses: garygrossgarten/github-action-ssh@release
+      with:
+            command: ls -a
+            host: ${{ secrets.SAPHYR_PARIS_5_HOST }}
+            username: ik04346
+            privateKey: ${{ secrets.SAPHYR_PARIS_5_PRIVATE }}   

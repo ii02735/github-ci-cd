@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Connect to SSH
-      uses: applyboy/ssh-action@master
+      uses: appleboy/ssh-action@master
       with:
             script: cd github-ci-cd && git pull origin master
             host: ${{ secrets.SAPHYR_PARIS_5_HOST }}
